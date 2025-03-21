@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
                 className="flex items-center"
               >
                 <span className="text-2xl font-bold bg-gradient-to-r from-red-600 via-pink-500 to-orange-500 text-transparent bg-clip-text">
-                  Arogyam Kiosk
+                  Niramaya
                 </span>
               </motion.div>
             </Link>

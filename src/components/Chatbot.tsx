@@ -18,7 +18,7 @@ const Chatbot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     { 
-      text: "Hello! I'm Arogyam Assistant. How can I help you today?", 
+      text: "Hello! I'm Niramya How can I help you today?", 
       isBot: true 
     },
   ]);

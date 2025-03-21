@@ -5,13 +5,13 @@ import { Calendar, MessageSquare, Pill, Users } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-gray-300 to-gray-900">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-gradient-to-r from-red-600 via-pink-500 to-orange-500 opacity-20"
+            className="absolute rounded-full"
             initial={{
               x: Math.random() * window.innerWidth,
               y: Math.random() * window.innerHeight,
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           className="text-center"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
-            <span className="block text-white">Healthcare Reimagined for</span>
+            <span className="block text-black">Healthcare Reimagined for</span>
             <span className="block bg-gradient-to-r from-red-600 via-pink-500 to-orange-500 text-transparent bg-clip-text mt-2">
               Rural Communities
             </span>
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
             </Link>
             <Link
               to="/doctors"
-              className="px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white/10 md:py-4 md:text-lg md:px-10 transform transition hover:scale-105"
+              className="px-8 py-3 border border-black text-base font-medium rounded-md text-black hover:bg-white/10 md:py-4 md:text-lg md:px-10 transform transition hover:scale-105"
             >
               Find Doctors
             </Link>
