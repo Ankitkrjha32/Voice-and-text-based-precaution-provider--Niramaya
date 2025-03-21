@@ -5,19 +5,19 @@ import { Calendar, MessageSquare, Pill, Users, Video, Map, Bell, Shield } from '
 const ServiceCards: React.FC = () => {
   const services = [
     {
-      title: 'Telemedicine Consultations',
+      title: 'Niramaya Bot',
       description: 'Connect with doctors through secure video consultations from the comfort of your home.',
-      icon: <Video className="h-8 w-8 text-white" />,
+      icon: <Calendar className="h-8 w-8 text-white" />,
       delay: 0.1,
     },
     {
-      title: 'Appointment Booking',
+      title: ' Teleconsultation ',
       description: 'Schedule appointments with specialists based on your convenience and requirements.',
-      icon: <Calendar className="h-8 w-8 text-white" />,
+      icon: <Video className="h-8 w-8 text-white" />,
       delay: 0.2,
     },
     {
-      title: 'Ayurvedic Medicine Search',
+      title: 'Ayurvedic Medicine',
       description: 'Search and check availability of authentic Ayurvedic medicines in your area.',
       icon: <Pill className="h-8 w-8 text-white" />,
       delay: 0.3,
@@ -25,7 +25,14 @@ const ServiceCards: React.FC = () => {
     
     
     {
-      title: 'Health Queries',
+      title: 'Personlized Patiend Report',
+      description: 'Ask health-related questions and get answers from qualified medical professionals.',
+      icon: <MessageSquare className="h-8 w-8 text-white" />,
+      delay: 0.6,
+    },
+
+    {
+      title: 'One Stop Health Report',
       description: 'Ask health-related questions and get answers from qualified medical professionals.',
       icon: <MessageSquare className="h-8 w-8 text-white" />,
       delay: 0.6,

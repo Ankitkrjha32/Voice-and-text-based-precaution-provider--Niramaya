@@ -73,7 +73,8 @@ const Navbar: React.FC = () => {
     { name: 'Home', path: '/', icon: <Home className="w-5 h-5" /> },
     { name: 'Appointments', path: '/appointments', icon: <Calendar className="w-5 h-5" /> },
     { name: 'Medicines', path: '/medicines', icon: <Pill className="w-5 h-5" /> },
-    { name: 'Messages', path: '/messages', icon: <MessageSquare className="w-5 h-5" /> },
+    // { name: 'Messages', path: '/messages', icon: <MessageSquare className="w-5 h-5" /> },
+    { name: 'User Report', path: '/userprofile', icon: <MessageSquare className="w-5 h-5" /> },
     { name: 'Find Doctors', path: '/doctors', icon: <Search className="w-5 h-5" /> },
     { name: 'Video Call', path: '/video-consultation', icon: <Video className="w-5 h-5" /> },
   ];
@@ -96,7 +97,7 @@ const Navbar: React.FC = () => {
                 transition={{ duration: 0.5 }}
                 className="flex items-center"
               >
-                <span className="text-2xl font-bold bg-gradient-to-r from-red-600 via-pink-500 to-orange-500 text-transparent bg-clip-text">
+                <span className="text-2xl font-bold bg-gradient-to-r from-[#2596be] via-[#1e81a0] to-[#155e75] text-transparent bg-clip-text">
                   Niramaya
                 </span>
               </motion.div>
@@ -111,7 +112,7 @@ const Navbar: React.FC = () => {
                 to={link.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium flex items-center space-x-1 transition-colors ${
                   location.pathname === link.path
-                    ? 'text-white bg-gradient-to-r from-red-600 via-pink-500 to-orange-500'
+                    ? 'text-blue-800 bg-gradient-to-rbg-gradient-to-r from-[#2596be] via-[#1e81a0] to-[#155e75]'
                     : 'text-gray-700 hover:bg-red-50 hover:text-red-600'
                 }`}
               >
@@ -146,7 +147,7 @@ const Navbar: React.FC = () => {
                   to="/login"
                   className="px-4 py-2 rounded-md text-sm font-medium border border-red-500 text-red-600 hover:bg-red-50"
                 >
-                  Login
+                  Management Login
                 </Link>
                 <Link
                   to="/signup"
@@ -236,7 +237,7 @@ const Navbar: React.FC = () => {
                   onClick={closeMenu}
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-red-50 hover:text-red-600"
                 >
-                  Login
+                  Management Login
                 </Link>
                 <Link
                   to="/signup"

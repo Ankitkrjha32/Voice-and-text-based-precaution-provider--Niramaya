@@ -17,6 +17,7 @@ import Signup from './components/Signup';
 import Profile from './components/Profile';
 import VerifyEmail from './components/VerifyEmail';
 import DoctorRegistration from './components/DoctorRegistration';
+import Summary from './components/Summary';
 import VideoCallFeature from './components/VideoCallPage'; // Import the new component
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/medicines" element={<MedicineSearch />} />
           <Route path="/doctors" element={<BestDoctors />} />
           <Route path="/messages" element={<Messaging />} />
+          <Route path="/summary" element={<Summary />} />
           <Route path="/video-consultation" element={<VideoCallFeature />} /> {/* Add this new route */}
         </Routes>
         

@@ -91,9 +91,9 @@ const ContactUs: React.FC = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-gray-900">Our Location</h4>
                     <p className="mt-1 text-gray-600">
-                      Arogyam Kiosk<br />
-                      Retang, C.V.Raman<br />
-                      Bhubanewsar, Odisha 752054
+                      Niramya Team<br />
+                      IIT Delhi Hackathon<br />
+                      Okhla Phase 3
                     </p>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const ContactUs: React.FC = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-gray-900">Phone</h4>
                     <p className="mt-1 text-gray-600">
-                      8252228793
+                      999999955
                     </p>
                   </div>
                 </div>
@@ -117,7 +117,7 @@ const ContactUs: React.FC = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-gray-900">Email</h4>
                     <p className="mt-1 text-gray-600">
-                      sudhaanshuu@gmail.com
+                      manishkumar995582@gmail.com
                     </p>
                   </div>
                 </div>
@@ -127,11 +127,11 @@ const ContactUs: React.FC = () => {
                     <Clock className="h-5 w-5 text-white" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-gray-900">Working Hours</h4>
+                    <h4 className="text-lg font-medium text-gray-900"> Nearby Clinic Timings</h4>
                     <p className="mt-1 text-gray-600">
                       Monday - Friday: 9:00 AM - 8:00 PM<br />
                       Saturday: 9:00 AM - 5:00 PM<br />
-                      Sunday: Closed
+                    
                     </p>
                   </div>
                 </div>
