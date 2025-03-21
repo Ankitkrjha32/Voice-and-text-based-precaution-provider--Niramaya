@@ -83,7 +83,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Calendar, MessageSquare, Pill, Users } from 'lucide-react';
 
-
 const translations =
 [
   { "language": "Sanskrit", "part1": "सर्वे भवन्तु सुखिनः", "part2": "सर्वे सन्तु निरामयाः।" },
@@ -107,8 +106,8 @@ const translations =
   { "language": "Sindhi", "part1": "سروے ڀونتو سکينھ", "part2": "سروے سنتو نيرامياه۔" },
   { "language": "Tamil", "part1": "சர்வே பவந்து சுகிந:", "part2": "சர்வே சந்து நிராமயா:" },
   { "language": "Telugu", "part1": "సర్వే భవంతు సుఖినః", "part2": "సర్వే సంతు నిరామయాః।" },
-  { "language": "Urdu", "part1": "سروے بھونتو سکینھ", "part2": "سروے سنتو نیرامیاہ۔" }
-];
+  { "language": "Urdu", "part1": "سروے بھونتو سکینھ", "part2": "سروے سنتو نیرامیاہ۔" }
+]
 
 
 const Hero: React.FC = () => {
@@ -138,7 +137,7 @@ const Hero: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
             <motion.span 
               key={index} 
-              className="block text-black" 
+              className="block text-black text-4xl sm:text-5xl md:text-6xl my-2 py-2" 
               initial={{ opacity: 0 }} 
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -148,7 +147,7 @@ const Hero: React.FC = () => {
             </motion.span>
             <motion.span
               key={`translation-${index}`}
-              className="block bg-gradient-to-r from-[#2596be] via-[#1e81a0] to-[#155e75] text-transparent bg-clip-text mt-2"
+              className="block p-4 text-4xl sm:text-5xl md:text-6xl my-2 bg-gradient-to-r from-[#2596be] via-[#1e81a0] to-[#155e75] text-transparent bg-clip-text mt-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
