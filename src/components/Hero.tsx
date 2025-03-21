@@ -84,23 +84,30 @@ import { Link } from "react-router-dom";
 import { Calendar, MessageSquare, Pill, Users } from 'lucide-react';
 
 
-const translations = [
-  { sanskrit: 'सर्वे भवन्तु सुखिनः', translation: 'सर्वे सन्तु निरामयाः।' },
-  { sanskrit: 'सभी सुखी रहें', translation: 'सभी निरोगी रहें।' },
-  { sanskrit: 'সবাই সুখী থাকুন', translation: 'সকলেই রোগমুক্ত থাকুন।' },
-  { sanskrit: 'அனைவரும் மகிழ்ச்சியாக இருப்பாராக', translation: 'அனைவரும் நோயின்றி இருப்பாராக' },
-  { sanskrit: 'అందరూ సంతోషంగా ఉండాలి', translation: 'అందరూ రోగములేని జీవితం గడపాలి' },
-  { sanskrit: 'ಎಲ್ಲರೂ ಸಂತೋಷವಾಗಿರಲಿ', translation: 'ಎಲ್ಲರೂ ಆರೋಗ್ಯವಾಗಿರಲಿ' },
-  { sanskrit: 'എല്ലാവരും സന്തോഷവാന്മാരാകട്ടെ', translation: 'എല്ലാവരും രോഗമുക്തരാകട്ടെ' },
-  { sanskrit: 'सर्व जण सुखी असोत', translation: 'सर्व जण रोगमुक्त असोत' },
-  { sanskrit: 'બધા સુખી રહે', translation: 'બધા નિરોગી રહે' },
-  { sanskrit: 'ਸਭ ਖੁਸ਼ ਰਹਣ', translation: 'ਸਭ ਨਿਰੋਗ ਰਹਣ' },
-  { sanskrit: 'ସମସ୍ତେ ସୁଖୀ ରହନ୍ତୁ', translation: 'ସମସ୍ତେ ରୋଗମୁକ୍ତ ରହନ୍ତୁ' },
-  { sanskrit: 'সকলোৱে সুখী হওক', translation: 'সকলোৱে ৰোগমুক্ত হওক' },
-  { sanskrit: 'سب خوش رہیں', translation: 'سب صحت مند رہیں' },
-  { sanskrit: 'सगळे सुखी असू', translation: 'सगळे निरोगी असू' },
-  { sanskrit: 'सभे सुखी रहथु', translation: 'सभे निरोग रहथु' },
-  { sanskrit: 'ᱛᱟᱞᱟ ᱯᱩᱞᱟ ᱠᱩᱴᱩ', translation: 'ᱛᱟᱞᱟ ᱚᱢ ᱞᱟᱠᱟᱴᱩ' },
+const translations =
+[
+  { "language": "Sanskrit", "part1": "सर्वे भवन्तु सुखिनः", "part2": "सर्वे सन्तु निरामयाः।" },
+  { "language": "Assamese", "part1": "সৰ্বে ভবন্তু সুখিনঃ", "part2": "সৰ্বে সন্তু নিৰাময়াঃ।" },
+  { "language": "Bengali", "part1": "সর্বে ভবন্তু সুখিনঃ", "part2": "সর্বে সন্তু নিরাময়াঃ।" },
+  { "language": "Bodo", "part1": "सर्वे भवंतु सुखिनः", "part2": "सर्वे संतु निरामयाः।" },
+  { "language": "Dogri", "part1": "सर्वे भवन्तु सुखिनः", "part2": "सर्वे सन्तु निरामयाः।" },
+  { "language": "Gujarati", "part1": "સર્વે ભવન્તુ સુખિનઃ", "part2": "સર્વે સન્તુ નિરામયાઃ।" },
+  { "language": "Hindi", "part1": "सर्वे भवन्तु सुखिनः", "part2": "सर्वे सन्तु निरामयाः।" },
+  { "language": "Kannada", "part1": "ಸರ್ವೇ ಭವಂತು ಸುಖಿನಃ", "part2": "ಸರ್ವೇ ಸಂತು ನಿರಾಮಯಾಃ।" },
+  { "language": "Kashmiri", "part1": "سَروے بھَوَنتو سُکھِنَہ", "part2": "سَروے سَنتو نِرامَیَاہ۔" },
+  { "language": "Konkani", "part1": "सर्वे भवन्तु सुखिनः", "part2": "सर्वे सन्तु निरामयाः।" },
+  { "language": "Maithili", "part1": "सर्वे भवन्तु सुखिनः", "part2": "सर्वे सन्तु निरामयाः।" },
+  { "language": "Malayalam", "part1": "സർവേ ഭവന്തു സുഖിനഃ", "part2": "സർവേ സന്തു നിരാമയാഃ।" },
+  { "language": "Manipuri", "part1": "ꯁꯥꯔꯕꯤ ꯕꯥꯋꯟꯇꯨ ꯁꯨꯈꯤꯅꯥꯡ", "part2": "ꯁꯥꯔꯕꯤ ꯁꯟꯇꯨ ꯅꯤꯔꯥꯃꯌꯥꯡ।" },
+  { "language": "Marathi", "part1": "सर्वे भवन्तु सुखिनः", "part2": "सर्वे सन्तु निरामयाः।" },
+  { "language": "Nepali", "part1": "सर्वे भवन्तु सुखिनः", "part2": "सर्वे सन्तु निरामयाः।" },
+  { "language": "Odia", "part1": "ସର୍ବେ ଭବନ୍ତୁ ସୁଖିନଃ", "part2": "ସର୍ବେ ସନ୍ତୁ ନିରାମୟାଃ।" },
+  { "language": "Punjabi", "part1": "ਸਰਵੇ ਭਵੰਤੁ ਸੁਖਿਨ੃", "part2": "ਸਰਵੇ ਸੰਤੁ ਨਿਰਾਮਯ੃।" },
+  { "language": "Santali", "part1": "ᱥᱟᱨᱵᱮ ᱵᱦᱟᱣᱟᱱᱴᱩ ᱥᱩᱠᱷᱤᱱᱟᱹ", "part2": "ᱥᱟᱨᱵᱮ ᱥᱟᱱᱴᱩ ᱱᱤᱨᱟᱢᱟᱹᱭᱟ।" },
+  { "language": "Sindhi", "part1": "سروے ڀونتو سکينھ", "part2": "سروے سنتو نيرامياه۔" },
+  { "language": "Tamil", "part1": "சர்வே பவந்து சுகிந:", "part2": "சர்வே சந்து நிராமயா:" },
+  { "language": "Telugu", "part1": "సర్వే భవంతు సుఖినః", "part2": "సర్వే సంతు నిరామయాః।" },
+  { "language": "Urdu", "part1": "سروے بھونتو سکینھ", "part2": "سروے سنتو نیرامیاہ۔" }
 ];
 
 
@@ -137,7 +144,7 @@ const Hero: React.FC = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 1 }}
             >
-              {translations[index].sanskrit}
+              {translations[index].part1}
             </motion.span>
             <motion.span
               key={`translation-${index}`}
@@ -147,7 +154,7 @@ const Hero: React.FC = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 1 }}
             >
-              {translations[index].translation}
+              {translations[index].part2}
             </motion.span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-xl font-bold text-[rgb(37, 150, 190)]">

@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
     { name: 'Appointments', path: '/appointments', icon: <Calendar className="w-5 h-5" /> },
     { name: 'Medicines', path: '/medicines', icon: <Pill className="w-5 h-5" /> },
     // { name: 'Messages', path: '/messages', icon: <MessageSquare className="w-5 h-5" /> },
-    { name: 'User Report', path: '/userprofile', icon: <MessageSquare className="w-5 h-5" /> },
+    { name: 'User Report', path: '/summary', icon: <MessageSquare className="w-5 h-5" /> },
     { name: 'Find Doctors', path: '/doctors', icon: <Search className="w-5 h-5" /> },
     { name: 'Video Call', path: '/video-consultation', icon: <Video className="w-5 h-5" /> },
   ];
