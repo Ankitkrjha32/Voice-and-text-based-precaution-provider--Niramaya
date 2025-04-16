@@ -151,7 +151,7 @@ const Chatbot: React.FC = () => {
       }
       throw new Error('Unexpected response format from API');
     } catch (error) {
-      throw new Error('Failed to process your request. Please try again.');
+      throw new Error('Failed to process your request. Please try again!.');
     }
   };
 
